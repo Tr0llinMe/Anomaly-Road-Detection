@@ -84,10 +84,10 @@ def train_model(model, train_generator, validation_generator, epochs=15):
     """
     history = model.fit(
         train_generator,
-        steps_per_epoch=4,  # Adjust based on your dataset
+        steps_per_epoch=4,  # Adjust based on samples (40)
         epochs=epochs,
         validation_data=validation_generator,
-        validation_steps=4  # Adjust based on your dataset
+        validation_steps=4  # Adjust based on samples (40)
     )
     return history
 
